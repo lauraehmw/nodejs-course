@@ -1,0 +1,2 @@
+Para correr un archivo JS:
+    node nombre_del_archivo

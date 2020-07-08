@@ -1,0 +1,1 @@
+Podemos leer y escribir información a través de los procesos más allá de console.log

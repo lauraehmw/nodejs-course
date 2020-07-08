@@ -1,0 +1,12 @@
+Procesos.
+
+Nodejs cuenta con un objeto global llamado 'Process' que nos da información sobre el 
+ambiente en que está siendo ejecutado.
+
+Nodejs funciona de forma asíncrona: no necesita terminar una operación para empezar a ejecutar otra.
+    Ventajas: Todas las solicitudes que hagamos se almacenan en una especie de cola / lista de espera. 
+                Conforme Nodejs va despachando los procesos, pasa al siguiente.
+
+
+Se pueden incluir algunos argumentos al ejecutar:
+    node process --nombre "Laura" --edad 24
