@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+h1, h2{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #fff;
+}
+
+h3, h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+
+img{
+    width: 50%;
+}
+
+
+body{
+    background-color: blueviolet;
+    padding: 5em;
+}
