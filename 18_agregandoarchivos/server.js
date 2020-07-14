@@ -17,7 +17,7 @@ http
         const fileStream = fs.createReadStream(reqPath, 'UTF-8'); /* Porque no sabemos qué tan pesado eso */
 
         res.writeHead(200, {'Content-Type': 'text/css'});
-        fileStream.pipe(res); /* Nos manda a epdacito la info */
+        fileStream.pipe(res); /* Nos manda a pedacito la info */
     }else if(req.url.match(/.png$/)){
         const reqPath = path.join(__dirname, 'public', req.url);
         const fileStream = fs.createReadStream(reqPath);
