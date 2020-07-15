@@ -1,0 +1,6 @@
+First you need to install httpster
+Then just write this on the console inside this folder:
+
+httpster -p 8081 -d ./public
+
+Easy. Isn't it?
