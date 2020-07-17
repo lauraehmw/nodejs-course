@@ -1,15 +1,12 @@
 const express = require('express');
-
-
+const bodyParser = require('body-parser')
 
 const app = express();
+const urlencodedParser = bodyParser.urlencoded({extended: false})
 
 
-
-/* This could be the way of extractig data by hand */
-
-app.get('/', (req, res) =>{
-    let url = req.url;
+app.get('/', urlencodedParser, (req, res) =>{
+/*     let url = req.url;
 
     url = url.substring(url.indexOf('?') +1);
     
@@ -19,10 +16,13 @@ app.get('/', (req, res) =>{
         let object = param.split('=');
 
         text += object[0] + ': ' + object[1] + '<br>';
-    })
+    }); */
 
-    res.send(`<h1>Tus datos son: <br> ${text}</h1>`);
-    console.log(text);
+
+    res.send(`<h1>Tus datos son: <br> Nombre: ${req.query.nombre} <br>
+    Apellido: ${req.query.apellido}</h1>`);
+    console.log(req.query);
+    
 });
 
 app.listen(3000, () =>{
